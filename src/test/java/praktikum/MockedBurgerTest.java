@@ -35,7 +35,7 @@ public class MockedBurgerTest extends BurgerTestBaseClass{
 
         float expectedPrice = (float) 60;
 
-        assertEquals(expectedPrice, burger.getPrice(), 0);
+        assertEquals("Burger price is incorrect", expectedPrice, burger.getPrice(), 0);
     }
 
     @Test
@@ -57,6 +57,6 @@ public class MockedBurgerTest extends BurgerTestBaseClass{
                 "black bun",
                 (float) 50);
 
-        assertEquals(expectedReceipt, burger.getReceipt());
+        assertEquals("Burger receipt is incorrect", expectedReceipt, burger.getReceipt());
     }
 }

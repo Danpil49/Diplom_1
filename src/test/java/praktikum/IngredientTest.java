@@ -28,8 +28,8 @@ public class IngredientTest {
     @Test
     public void ingredientCreationTest() {
         Ingredient testIngredient = new Ingredient(type, name, price);
-        assertEquals(type, testIngredient.getType());
-        assertEquals(name, testIngredient.getName());
-        assertEquals(price, testIngredient.getPrice(), 0f);
+        assertEquals("Ingredient type is incorrect", type, testIngredient.getType());
+        assertEquals("Ingredient name is incorrect", name, testIngredient.getName());
+        assertEquals("Ingredient price is incorrect", price, testIngredient.getPrice(), 0f);
     }
 }

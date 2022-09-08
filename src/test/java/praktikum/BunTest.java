@@ -12,7 +12,7 @@ public class BunTest {
         String bunName = "Orange bun";
         float bunPrice = 500;
         float delta = 0;
-        assertEquals("bunName", bunName, testBun.getName());
-        assertEquals(bunPrice, testBun.getPrice(), delta);
+        assertEquals("bunName is incorrect", bunName, testBun.getName());
+        assertEquals("bunPrice is incorrect", bunPrice, testBun.getPrice(), delta);
     }
 }
